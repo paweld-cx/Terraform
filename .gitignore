@@ -1,0 +1,15 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+.terraform.lock.hcl
+
+# Opcjonalnie
+*.tfvars
+*.tfvars.json
+
+# Klucze
+id_rsa
+id_rsa.pub
+*.pem
