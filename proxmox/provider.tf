@@ -23,7 +23,7 @@ data "azurerm_key_vault_secret" "proxmox" {
 
 provider "proxmox" {
   endpoint = var.proxmox_endpoint
-  #  api_token = var.proxmox_api_token
+  api_token = var.proxmox_api_token
   api_token = data.azurerm_key_vault_secret.proxmox.value
   insecure  = true
 }
